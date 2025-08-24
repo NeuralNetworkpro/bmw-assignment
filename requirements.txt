@@ -1,0 +1,11 @@
+langgraph
+langchain
+langchain-openai
+dotenv
+streamlit
+langgraph-checkpoint-sqlite
+langsmith
+langchain-community
+duckduckgo-search
+ddgs
+torch
