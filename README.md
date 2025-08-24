@@ -59,22 +59,22 @@ This project implements a sophisticated AI chatbot system using LangGraph for st
 ## Installation and Setup
 
 ### Prerequisites
-\`\`\`bash
+
 # Required Python packages
 - pip install langgraph langchain langchain-openai python-dotenv streamlit
 - pip install langgraph-checkpoint-sqlite langsmith langchain-community
 - pip install duckduckgo-search ddgs torch
-\`\`\`
+
 
 ### Environment Configuration
 - Create a `.env` file in the project root:
-\`\`\`env
+env file
 - OPENAI_API_KEY=your_openai_api_key_here
 - LANGCHAIN_TRACING_V2=true
 - LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
 - LANGCHAIN_API_KEY=your_langsmith_api_key_here
 - LANGCHAIN_PROJECT=chatbot-project
-\`\`\`
+
 
 ### Hardware Requirements
 - **Minimum**: CPU with 8GB RAM
@@ -84,10 +84,9 @@ This project implements a sophisticated AI chatbot system using LangGraph for st
 ## Usage Guide
 
 ### Starting the Application
-\`\`\`bash
+
 # Run the chatbot
 streamlit run app_frontend.py
-\`\`\`
 
 ### Basic Operations
 1. **New Conversation**: Click "New Chat" in sidebar
@@ -97,7 +96,6 @@ streamlit run app_frontend.py
 5. **View History**: All conversations are automatically saved
 
 ### Tool Usage Examples
-\`\`\`
 - User: "Search for latest AI news"
 → Triggers DuckDuckGo search tool
 
@@ -106,7 +104,6 @@ streamlit run app_frontend.py
 
 - User: "Search for TSLA stock information"
 → May trigger both search and stock tools
-\`\`\`
 
 ## Model and Package Justification
 
