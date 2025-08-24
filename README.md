@@ -61,19 +61,19 @@ This project implements a sophisticated AI chatbot system using LangGraph for st
 ### Prerequisites
 \`\`\`bash
 # Required Python packages
-pip install langgraph langchain langchain-openai python-dotenv streamlit
-pip install langgraph-checkpoint-sqlite langsmith langchain-community
-pip install duckduckgo-search ddgs torch
+- pip install langgraph langchain langchain-openai python-dotenv streamlit
+- pip install langgraph-checkpoint-sqlite langsmith langchain-community
+- pip install duckduckgo-search ddgs torch
 \`\`\`
 
 ### Environment Configuration
-Create a `.env` file in the project root:
+- Create a `.env` file in the project root:
 \`\`\`env
-OPENAI_API_KEY=your_openai_api_key_here
-LANGCHAIN_TRACING_V2=true
-LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
-LANGCHAIN_API_KEY=your_langsmith_api_key_here
-LANGCHAIN_PROJECT=chatbot-project
+- OPENAI_API_KEY=your_openai_api_key_here
+- LANGCHAIN_TRACING_V2=true
+- LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+- LANGCHAIN_API_KEY=your_langsmith_api_key_here
+- LANGCHAIN_PROJECT=chatbot-project
 \`\`\`
 
 ### Hardware Requirements
@@ -98,13 +98,13 @@ streamlit run app_frontend.py
 
 ### Tool Usage Examples
 \`\`\`
-User: "Search for latest AI news"
+- User: "Search for latest AI news"
 → Triggers DuckDuckGo search tool
 
-User: "What's Apple's stock price?"
+- User: "What's Apple's stock price?"
 → Triggers stock price lookup tool
 
-User: "Search for TSLA stock information"
+- User: "Search for TSLA stock information"
 → May trigger both search and stock tools
 \`\`\`
 
