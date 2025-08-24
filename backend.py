@@ -14,9 +14,17 @@ import requests
 import torch
 import logging
 from functools import wraps
+import streamlit as st
 
 # loading environment variables
 load_dotenv()
+
+# only for streamlit cloud deployment, otherwise use os.getenv / comment later on 
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
+langchain_project = st.secrets["LANGCHAIN_PROJECT"]
+langchain_endpoint = st.secrets["LANGCHAIN_ENDPOINT"]
+langchain_tracing = st.secrets["LANGCHAIN_TRACING_V2"]
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
